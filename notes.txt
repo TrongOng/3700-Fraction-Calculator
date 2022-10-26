@@ -1,0 +1,50 @@
+HasPrecedence(char a, char b)
+    does a has HasPrecedence in b?
+tabe precenece can be bunch of if conditons
+if (a=='+' || a=='/')
+    return true
+if (a =='(' || a==')')
+    return true
+return b =='+' || b=='-' || b=='=' (allows for middle row of table)
+
+(a are overall operators)
+a = 2*2
+b = a/2
+
+numStack = [a][2][2]
+opStack = [=][*]
+
+Dictionary[key][value]
+    [a][4]
+left right
+2 * 2
+clear numStack
+clear opStack
+
+numStack = [b][a][2]
+opStack = [=][/]
+
+Dictionary = [a][4]
+            [b][2]
+
+
+Dictionary = global or in evaluate(static)
+doOp - can be variables name (with a struct)
+    -how to tell?
+        set name = "";
+        no name; use a num
+
+if(isDigit(s[first])) {
+    num.name=""
+    num.val = 0;
+    while (isDigit(s[first])) {
+        num.val = num.val*10 + s[first] - 'o'
+        first++
+    }
+    numStack.push(num)
+}
+for adding number together as whole
+fraction sequece
+for (int i = 0; i < s.length; i++) {
+    sequence.num=sequence.num*10+(s[i] - '0')
+}
